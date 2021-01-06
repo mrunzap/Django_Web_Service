@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = 'stylesheet' href ='/static/bootstrap.min.css'>
+
+    <title>Title</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+{% comment %}  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBlhYYq0uQQF2N2_Ly-urGfKe99zNS3Edk",
+    authDomain: "django-unzap-project.firebaseapp.com",
+    projectId: "django-unzap-project",
+    storageBucket: "django-unzap-project.appspot.com",
+    messagingSenderId: "153351879948",
+    appId: "1:153351879948:web:d2d569c1ebd2119f19dd29",
+    measurementId: "G-GNVQC9LDYM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();{% endcomment %}
+</script>
+</head>
+<body>
+  <div class ="container">
+    {% block contents %}
+
+    {% endblock %}
+  </div>
+</body>
+</html>

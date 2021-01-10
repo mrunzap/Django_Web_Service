@@ -7,6 +7,7 @@ class Board(models.Model):
     content = models.TextField(verbose_name="내용")
     # fcuser 폴더에 있는  Fcuser 모델과 연결을 하겠다.
     writer  = models.ForeignKey('fcuser.Fcuser', on_delete= models.CASCADE, verbose_name="작성자")
+    tags    = models.ManyToManyField('tag.Tag',verbose_name='태')
     register_dttm = models.DateTimeField(auto_now_add= True, verbose_name="등록일")
 
     def __str__(self):
